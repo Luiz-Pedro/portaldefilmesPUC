@@ -25,14 +25,14 @@ async function fetchDadosComplexosDoFilme(id){
 
 function criaGrid(dados){
     let titulo, imagem, descricao, tipo, vejamais, container, containerInfos;
-
+    console.log(dados)
     dados.map(async filme =>{
         
         container = document.createElement("li");
         container.classList.add("containerFilme");
 
         imagem= document.createElement("img");
-        imagem.src = `https://image.tmdb.org/t/p/w500${filme.poster_path}`;
+        imagem.src = `https://image.tmdb.org/t/p/w500${filme.poster_path ? filme.poster_path : filme.profile_path}`;
 
         containerInfos = document.createElement("div");
         containerInfos.classList.add("containerInfos");
