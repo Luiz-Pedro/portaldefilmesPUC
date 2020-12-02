@@ -2,7 +2,7 @@ let baseUrl = "https://api.themoviedb.org/3";
 let apiKey = "3bf0718422e06d4d7d271d9d559a853f";
 let timeWindow = "week";
 let mediaType = "all"
-let urlPopulares = `/trending/${mediaType}/${timeWindow}?api_key=${apiKey}`;
+let urlPopulares = `/trending/${mediaType}/${timeWindow}?api_key=${apiKey}&language=pt-BR`;
 
 if(document.querySelector("#popularesDaSemana")){
     fetchHomePopulares(urlPopulares);

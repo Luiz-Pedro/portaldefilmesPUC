@@ -16,15 +16,17 @@ header div{
         width: 90%;
     }
 }
-header div p{
-    font-family: 'Pacifico', cursive;
-    font-size: 1.4em;
-}
 header div a{
     color: #fff;
     margin-left: auto;
     font-weight: bold;
     font-size: 1.2em;
+}
+.titulo{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4em;
+    margin-left: 0;
+    font-weight: normal;
 }
 @media (max-width: 600px){
     header div a{
@@ -33,15 +35,18 @@ header div a{
 }
 
 h1{
-    color: #664cd8;
-    text-align: center;
-    margin-top: 1em;
-    font-size: 3em;
+    color: #2f2f2f;
+    text-align: left;
+    font-size: 2.5em;
+    width: 85%;
+    margin: 1em auto;
+    border-bottom: solid #2f2f2f;
+    padding-bottom: 0.5em;
 }
 
 @media (max-width: 600px){
     h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
@@ -59,6 +64,7 @@ h1{
         grid-template-columns: 1fr;
         width: 90%;
         grid-gap: 2em;
+        margin: 2em auto;
     }
 }
 
@@ -69,12 +75,28 @@ h1{
     box-shadow: 2px 2px 8px 1px rgba(00,00,00,0.2);
 
 }
+@media (max-width: 600px){
+    .containerFilme{
+        flex-direction: column-reverse;
+    }
+}
 .containerFilme img{
     height: auto;
     width: 30%;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
+@media (max-width: 600px){
+    .containerFilme img{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: 2em;
+    }
+}
+
 .containerFilme h2{
     color: #2f2f2f;
 }
@@ -113,6 +135,9 @@ h1{
 @media (max-width: 600px){
     .botaovejamais{
         font-size: 0.8em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+
     }
 }
 
@@ -151,4 +176,10 @@ h1{
     width: 50%;
     margin: 3em auto;
     display: flex;
+}
+
+@media (max-width: 600px){
+    #form{
+        width: 90%;
+    }
 }
