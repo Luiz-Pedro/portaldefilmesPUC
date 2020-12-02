@@ -78,6 +78,7 @@ h1{
 @media (max-width: 600px){
     .containerFilme{
         flex-direction: column-reverse;
+        padding-top: 1em;
     }
 }
 .containerFilme img{
